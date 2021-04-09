@@ -11,9 +11,10 @@ class CategoryScreen extends StatelessWidget {
           title: const Text(
             'RecipeApp',
           ),
-          
+
         ),
         body: GridView(
+          padding: EdgeInsets.all(25),
           children: DUMMY_CATEGORIES
               .map(
                 (catData) => CategoryItem(
